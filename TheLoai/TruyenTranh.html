@@ -1,0 +1,620 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link href="../CSS/animate.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="../imges/books.png" />
+    <link href="../fontawesome-free-5.9.0-web/css/all.min.css" rel="stylesheet">
+    <link href="../CSS/NXBMoi.css" rel="stylesheet">
+    <script src="../JS/wow.min.js"></script>
+    <script src="../JQuery/jquery-3.4.1.min.js">
+    </script>
+    <title>Thể loại: Truyện tranh</title>
+</head>
+
+<body>
+    <!-- Tạo Script chuyển động goto top -->
+    <script>
+        jQuery(document).ready(function ($) {
+            if ($(".goToTop").length > 0) {
+                $(window).scroll(function () {
+                    var e = $(window).scrollTop();
+                    if (e > 300) {
+                        $(".goToTop").show()
+                    } else {
+                        $(".goToTop").hide()
+                    }
+                });
+                $(".goToTop").click(function () {
+                    $('body,html').animate({
+                        scrollTop: 0
+                    })
+                })
+            }
+        });
+    </script>
+    <div class="bodys">
+        <!--Tạo header-->
+        <div class="header wow bounceInLeft">
+            <div class="header-top"><a href="#"><img
+                        src="../imges/67570112_640356469805196_2873906000941809664_n.jpg" /></a></div>
+            <div class="menu">
+                <ul class="menu-tag">
+                    <li><a href="../Index.html">Trang Chủ</a></li>
+                    <li><a href="#" onClick="alert('Đang Cập Nhật')">Blog Sách Hay</a></li>
+                    <li><a href="#" onClick="alert('Đang Cập Nhật')">Giới Thiệu</a></li>
+                    <li><a href="#" onClick="alert('Đang Cập Nhật')">Liên Hệ</a></li>
+                    <li><a href="#" onClick="alert('Đang Cập Nhật')">Diễn Đàn</a></li>
+                </ul>
+            </div>
+            <div class="hotline changeBgAnimation">
+                <div class="hotline-info">
+                    <i class="fa fa-phone"></i> 0905340611
+                </div>
+            </div>
+        </div>
+        <!-- Tạo danh sách menu-->
+        <div class="menu-list wow bounceInRight">
+            <div class="list">
+                <div class="hover">
+                    <p><a href="#"><img src="../imges/menu.jpg" /></a></p>
+                    <p><a href="#">TẤT CẢ DANH MỤC</a></p>
+                </div>
+                <ul class="list-name">
+                    <li><a href="../TheLoai/SachVanHoc.html">Sách Văn Học</a>
+                    </li>
+                    <li><a href="../TheLoai/TruyenTranh.html">Truyện Tranh</a></li>
+                    <li><a href="../TheLoai/SachKinhTe.html">Sách kinh tế</a></li>
+                    <li><a href="../TheLoai/SachOnThiDaiHoc.html">Sách ôn thi đại học</a></li>
+                    <li><a href="#" onClick="alert('Đang Cập Nhật')">Văn Phòng Phẩm</a></li>
+                    <li><a href="#" onClick="alert('Đang Cập Nhật')">Quà Tặng</a></li>
+                </ul>
+            </div>
+            <form class="search">
+                <input type="text" style="padding-left: 10px;" placeholder="Nhập từ khóa..." name="search" size="40"
+                    class="in1">
+                <button type="submit"><i class="fa fa-search" style="padding: 0px 10px;"></i></button>
+            </form>
+            <div class="log-in-out">
+                <a href="../Trang/DangNhap.html">Đăng Nhập</a>
+                <a href="../Trang/DangKy.html">Đăng Kí</a>
+            </div>
+        </div>
+
+        <div class="tip">
+            <div class="tip1">
+                <a href="#">Trang chủ</a>
+                <span>/</span>
+                Thể loại: Truyện tranh
+            </div>
+        </div>
+        <!----- Tạo danh sách ----->
+
+        <div class="body-body">
+
+            <!-- Tạo colum 1 -->
+            <div class="colum-1">
+                <div class="danhMuc-1">
+                    <div class="danhMuc-1-Name">Danh Mục Sản Phẩm</div>
+                    <ul>
+                        <li>
+                            <a href="../TheLoai/SachTruyen.html">Sách Truyện</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="danhMuc-2">
+                    <div class="danhMuc-1-Name">Nhà Phát Hành</div>
+                    <ul>
+                        <li>
+                            <a href="../NXB/NXBKimDong.html">Kim Đồng</a>
+                        </li>
+                        <li>
+                            <a href="../NXB/NXBNhaNam.html">Nhã Nam</a>
+                        </li>
+                        <li>
+                            <a href="../NXB/NXBTre.html">NXB Trẻ</a>
+                        </li>
+                        <li>
+                            <a href="../NXB/NXBFirstNew.html">First News - Trí Việt</a>
+                        </li>
+                        <li>
+                            <a href="../NXB/NXBThaiHa.html">Thái Hà</a>
+                        </li>
+                        <li>
+                            <a href="../NXB/NXBHoaHocTro.html">Hoa Học Trò</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="danhMuc-2">
+                    <div class="danhMuc-1-Name">Tác Giả</div>
+                    <ul>
+                        <li>
+                            <a href="../TacGia/TacGiaNguyenNhatAnh.html">Nguyễn Nhật Ánh</a>
+                        </li>
+                        <li>
+                            <a href="../TacGia/TacGiaTrangHa.html">Trang Hạ</a>
+                        </li>
+                        <li>
+                            <a href="../TacGia/TacGiaTonyBuoiSang.html">Tony Buổi Sáng</a>
+                        </li>
+                        <li>
+                            <a href="../TacGia/TacGiaJKRowling.html">J. K. Rowling</a>
+                        </li>
+                        <li>
+                            <a href="../TacGia/TacGiaMinhNhat.html">Minh Nhật</a>
+                        </li>
+                        <li>
+                            <a href="../TacGia/TacGiaMinhTrang.html">Linh Trang</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="topBanChay wow bounceInUp">
+                    <div class="topBanChay-Name">
+                        Top Bán Chạy
+                    </div>
+                    <ul class="topBanChay-List">
+                        <li class="clearFix">
+                            <a href="../Sach/SachBinhTinhKhiEManhMeKhiYeu.html">
+                                <img src="../imges/Sach/TopBanChay/binh-tinh-khi-e-manh-me-khi-yeu.jpg" />
+                            </a>
+                            <div class="clearFix-Name">
+                                <a href="../Sach/SachBinhTinhKhiEManhMeKhiYeu.html">Bình tĩnh khi Ế, Mạnh mẽ khi yêu</a>
+                                <div class="clearFix-Price">69,000<sup>đ</sup></div>
+                            </div>
+                        </li>
+                        <li class="clearFix">
+                            <a href="../Sach/SachTramDungVoDinh.html">
+                                <img src="../imges/Sach/TopBanChay/tram-dung-vo-dinh-manga.jpg" />
+                            </a>
+                            <div class="clearFix-Name">
+                                <a href="../Sach/SachTramDungVoDinh.html">Trạm Dừng Vô Định (Manga - Trọn bộ 5 Tập)</a>
+                                <div class="clearFix-Price">149,000<sup>đ</sup></div>
+                            </div>
+                        </li>
+                        <li class="clearFix">
+                            <a href="../Sach/SachLongTotCuaBanCanThemDoiPhanSacXao.html">
+                                <img src="../imges/Sach/TopBanChay/long-tot-cua-ban-can-them-doi-phan-sac-sao.jpg" />
+                            </a>
+                            <div class="clearFix-Name">
+                                <a href="../Sach/SachLongTotCuaBanCanThemDoiPhanSacXao.html">Lòng Tốt Của Bạn Cần Thêm
+                                    Đôi Phần Sắc Sảo</a>
+                                <div class="clearFix-Price">86,000<sup>đ</sup></div>
+                            </div>
+                        </li>
+                        <li class="clearFix">
+                            <a href="../Sach/SachThayCoGiaoHanhPhucSeThayDoiTheGioiTap1.html">
+                                <img src="../imges/Sach/TopBanChay/thay-co-giao-hanh-phuc-se-thay-doi-gioi-tap-1.jpg" />
+                            </a>
+                            <div class="clearFix-Name">
+                                <a href="../Sach/SachThayCoGiaoHanhPhucSeThayDoiTheGioiTap1.html">Thầy Cô Giáo Hạnh Phúc
+                                    Sẽ Thay Đổi Thế Giới - Tập 1 : Cẩm Nang Hạnh Phúc</a>
+                                <div class="clearFix-Price">82,000<sup>đ</sup></div>
+                            </div>
+                        </li>
+                        <li class="clearFix">
+                            <a href="../Sach/SachEmKhongCoGiDeMac.html">
+                                <img src="../imges/Sach/TopBanChay/76978_14_11_18_em-khong-co-gi-de-mac.png" />
+                            </a>
+                            <div class="clearFix-Name">
+                                <a href="../Sach/SachEmKhongCoGiDeMac.html">Em Không Có Gì Để Mặc
+                                </a>
+                                <div class="clearFix-Price">74,000<sup>đ</sup></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- tạo colum 2-->
+            <div class="colum-2">
+                <div class="tieuDe">
+                    <h1>Thể loại: Truyện tranh</h1>
+                </div>
+                <div class="colum-2-list">
+                    <ul class="list-images wow bounceInLeft">
+                        <li>
+                            <div class="images">
+                                <a href="#"><img src="../imges/NXBTre/59014_05_08_19_toan-chan-triet-luan.jpg" /></a>
+                            </div>
+                            <div class="images-Name">
+                                <a href="#">Toàn Chân Triết Luận</a>
+                            </div>
+                            <div class="colum-2-star">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="price">54,000đ</div>
+                            <div class="phatHanh">
+                                Phát hành: <b>05-08-2019</b>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="images">
+                                <a href="#"><img src="../imges/NXBTre/58143_02_08_19_fate-stay-night-tap-17.jpg" /></a>
+                            </div>
+                            <div class="images-Name">
+                                <a href="#">Fate Stay Night - Tập 17</a>
+                            </div>
+                            <div class="colum-2-star">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="price">40,000đ</div>
+                            <div class="phatHanh">
+                                Phát hành: <b>05-08-2019</b>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="images">
+                                <a href="#"><img
+                                        src="../imges/NXBTre/97143_02_08_19_canh-cut-rac-roi-ky-tap-9.jpg" /></a>
+                            </div>
+                            <div class="images-Name">
+                                <a href="#">Cánh cụt rắc rối kí - Tập 9</a>
+                            </div>
+                            <div class="colum-2-star">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="price">20,000đ</div>
+                            <div class="phatHanh">
+                                Phát hành: <b>05-08-2019</b>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="images">
+                                <a href="#"><img
+                                        src="../imges/NXBTre/61471_02_08_19_huyen-thoai-arslan-tap-1.jpg" /></a>
+                            </div>
+                            <div class="images-Name">
+                                <a href="#">Huyền Thoại Arslan - Tập 1</a>
+                            </div>
+                            <div class="colum-2-star">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="price">20,000đ</div>
+                            <div class="phatHanh">
+                                Phát hành: <b>05-08-2019</b>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="list-images wow bounceInRight">
+                        <li>
+                            <div class="images">
+                                <a href="#"><img src="../imges/NXBTre/64012_02_08_19_liar-game-tap-18.jpg" /></a>
+                            </div>
+                            <div class="images-Name">
+                                <a href="#">Liar Game - Tập 18</a>
+                            </div>
+                            <div class="colum-2-star">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="price">33,000đ</div>
+                            <div class="phatHanh">
+                                Phát hành: <b>02-08-2019</b>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="images">
+                                <a href="#"><img src="../imges/NXBTre/98209_02_08_19_skip-beat-39.jpg" /></a>
+                            </div>
+                            <div class="images-Name">
+                                <a href="#">Skip Beat - Tập 39</a>
+                            </div>
+                            <div class="colum-2-star">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="price">20,000đ</div>
+                            <div class="phatHanh">
+                                Phát hành: <b>05-08-2019</b>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="images">
+                                <a href="#"><img src="../imges/NXBTre/258_29_07_19_quan-doan-ech-xanh-tap-16.jpg" /></a>
+                            </div>
+                            <div class="images-Name">
+                                <a href="#">Quân Đoàn Ếch Xanh - Tập 16</a>
+                            </div>
+                            <div class="colum-2-star">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="price">40,000đ</div>
+                            <div class="phatHanh">
+                                Phát hành: <b>20-07-2019</b>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="images">
+                                <a href="#"><img src="../imges/NXBTre/63048_29_07_19_nhoc-zombie-tap-1.jpg" /></a>
+                            </div>
+                            <div class="images-Name">
+                                <a href="#">Nhóc Zombie - Tập 1</a>
+                            </div>
+                            <div class="colum-2-star">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="price">20,000đ</div>
+                            <div class="phatHanh">
+                                Phát hành: <b>29-07-2019</b>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="list-images wow bounceInLeft">
+                        <li>
+                            <div class="images">
+                                <a href="#"><img
+                                        src="../imges/NXBTre/91771_29_07_19_hoc-vien-tham-tu-q-tap-1.jpg" /></a>
+                            </div>
+                            <div class="images-Name">
+                                <a href="#">Học Viện Thám Tử Q - Tập 1
+                                </a>
+                            </div>
+                            <div class="colum-2-star">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="price">25,000đ</div>
+                            <div class="phatHanh">
+                                Phát hành: <b>29-07-2019</b>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="images">
+                                <a href="#"><img
+                                        src="../imges/NXBTre/72537_29_07_19_nha-tro-nhat-khac-tap-14.jpg" /></a>
+                            </div>
+                            <div class="images-Name">
+                                <a href="#">Nhà Trọ Nhất Khắc - Tập 14
+                                </a>
+                            </div>
+                            <div class="colum-2-star">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="price">25,000đ</div>
+                            <div class="phatHanh">
+                                Phát hành: <b>29-07-2019</b>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="images">
+                                <a href="#"><img
+                                        src="../imges/NXBTre/58103_23_07_19_canh-cut-rac-roi-ky-tap-8.jpg" /></a>
+                            </div>
+                            <div class="images-Name">
+                                <a href="#">Cánh Cụt Rắc Rối Ký - Tập 8</a>
+                            </div>
+                            <div class="colum-2-star">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="price">20,000đ</div>
+                            <div class="phatHanh">
+                                Phát hành: <b>20-07-2019</b>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="images">
+                                <a href="#"><img src="../imges/NXBTre/35489_22_07_19_fate-stay-night-tap-16.jpg" /></a>
+                            </div>
+                            <div class="images-Name">
+                                <a href="#">Fate Stay Night - Tập 16</a>
+                            </div>
+                            <div class="colum-2-star">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="price">40,000đ</div>
+                            <div class="phatHanh">
+                                Phát hành: <b>22-07-2019</b>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="list-images wow bounceInRight">
+                        <li>
+                            <div class="images">
+                                <a href="#"><img src="../imges/NXBTre/98364_22_07_19_skip-beat-tap-38.jpg" /></a>
+                            </div>
+                            <div class="images-Name">
+                                <a href="#">Skip Beat - Tập 38
+                                </a>
+                            </div>
+                            <div class="colum-2-star">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="price">20,000đ</div>
+                            <div class="phatHanh">
+                                Phát hành: <b>20-07-2019</b>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="images">
+                                <a href="#"><img
+                                        src="../imges/NXBTre/62594_15_07_19_quan-doan-ech-xanh-tap-15.jpg" /></a>
+                            </div>
+                            <div class="images-Name">
+                                <a href="#">Quân Đoàn Ếch Xanh - Tập 15
+                                </a>
+                            </div>
+                            <div class="colum-2-star">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="price">40,000đ</div>
+                            <div class="phatHanh">
+                                Phát hành: <b>15-07-2019</b>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="images">
+                                <a href="#"><img
+                                        src="../imges/NXBTre/39367_15_07_19_nha-tro-nhat-khac-tap-13.jpg" /></a>
+                            </div>
+                            <div class="images-Name">
+                                <a href="#">Nhà Trọ Nhất Khắc - Tập 13</a>
+                            </div>
+                            <div class="colum-2-star">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="price">25,000đ</div>
+                            <div class="phatHanh">
+                                Phát hành: <b>15-07-2019</b>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="images">
+                                <a href="#"><img src="../imges/Sach/còn đó đam mê 1.jpg" /></a>
+                            </div>
+                            <div class="images-Name">
+                                <a href="#">Còn đó đam mê</a>
+                            </div>
+                            <div class="colum-2-star">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="price">60,000đ</div>
+                            <div class="phatHanh">
+                                Phát hành: <b>05-08-2019</b>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="listPropadding">
+                    <ul class="listPropaddingNumber" style="padding-left:280px">
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">6</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- end -->
+    </div>
+    <!-- Tạo Footer -->
+    <div class="footer">
+        <div class="fb1">
+            <div class="fb1-Name">BOOK</div>
+            <div class="fb1-Adress">
+                <p>Đ/C: 371 Nguyễn Kiệm, Gò Vấp, HCM</p>
+            </div>
+            <div class="fb1-Hotline">
+                <p>Holine</p>
+                <b>0905340611</b>
+            </div>
+            <div class="fb1-Hotline">
+                <p>Email</p>
+                <b>1851050165trung@ou.edu.vn</b>
+            </div>
+        </div>
+        <div class="fb2">
+            <div class="fb2-Name">Hỗ Trợ Khách Hàng</div>
+            <div class="fb2-List">
+                <ul class="list-1">
+                    <li><a href="#" onClick="alert('Đang cập nhật')">Câu hỏi thường gặp</a></li>
+                    <li><a href="#" onClick="alert('Đang cập nhật')">Chính Sách</a></li>
+                    <li><a href="#" onClick="alert('Đang cập nhật')">Bảo Mật</a></li>
+                    <li><a href="#" onClick="alert('Đang cập nhật')">Bảo Hành Và Đổi Trả</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="fb2">
+            <div class="fb2-Name">Chủ Đề Nổi Bật</div>
+            <div class="fb2-List">
+                <ul class="list-1">
+                    <li><a href="../ChuDe/ChuDeTruyenNgonTinh.html">Truyện Ngôn Tình</a></li>
+                    <li><a href="../ChuDe/ChuDeSachTamLy.html">Sách Tâm Lí</a></li>
+                    <li><a href="../ChuDe/ChuDeSachKiNangSong.html">Sách Kĩ Năng Sống</a></li>
+                    <li><a href="../ChuDe/ChuDeSachKinhDoanh.html">Sách Kinh Doanh</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="fb2">
+            <div class="fb2-Name">Tác Giả Tiêu Biểu</div>
+            <div class="fb2-List">
+                <ul class="list-1">
+                    <li><a href="../TacGia/TacGiaNguyenNhatAnh.html">Nguyễn Nhật Ánh</a></li>
+                    <li><a href="../TacGia/TacGiaTrangHa.html">Trang Hạ</a></li>
+                    <li><a href="../TacGia/TacGiaTonyBuoiSang.html">Tony Buổi Sáng</a></li>
+                    <li><a href="../TacGia/TacGiaJKRowling.html">J. K. Rowling</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="fb2">
+            <div class="fb2-Name">Nhà Phát Hành Tiêu Biểu</div>
+            <div class="fb2-List">
+                <ul class="list-1">
+                    <li><a href="../NXB/NXBKimDong.html">Kim Đồng</a></li>
+                    <li><a href="../NXB/NXBNhaNam.html">Nhã Nam</a></li>
+                    <li><a href="../NXB/NXBTre.html">NXB Trẻ</a></li>
+                    <li><a href="../NXB/NXBFirstNew.html">First News - Trí Việt</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Go to top -->
+    <div class="goToTop">
+        <a href="#"><img id="myBtn" src="../imges/iconfinder_f-top_256_282460.png" alt="Go To Top" /></a>
+    </div>
+    <script>new WOW().init();</script>
+</body>
+
+</html>

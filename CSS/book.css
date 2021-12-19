@@ -1,0 +1,430 @@
+@charset "utf-8";
+body {
+	min-width: 1366px;
+}
+/* css header */
+.body-body {
+	width: 84%;
+	margin: 0 auto;
+}
+
+/* Animation for call-icon */
+@keyframes changeBgColor {
+	0%{background: red;}
+	25%{background: green;}
+	50%{background: blue;}
+	100%{background: white;}
+}
+
+.changeBgAnimation {
+	animation: changeBgColor 2s infinite;
+}
+.header {
+	padding: 20px 20px;
+	overflow: hidden;
+}
+.header-top {
+	float: left;
+}
+.menu-tag {
+	list-style-type: none;
+	display: flex;
+	float: left;
+	text-align: center;
+}
+.menu-tag > li {
+	min-width: 120px;
+}
+.menu-tag > li > a {
+	text-decoration: none;
+}
+.menu-tag  li > a:hover {
+	padding:10px;
+	background-color:#fea201;
+	color:white;
+}
+.hotline {
+	text-align: center;
+	padding: 4px 10px;
+	float: right;
+	border: 1px solid #fea201;
+	border-radius:20px;
+	margin-right:30px;
+}
+.hotline-info {
+	font-size: 20px;
+	padding: 10px 5px;
+	color: #fea201;
+}
+
+/* css menu list */
+.menu-list {
+	overflow:hidden;
+	padding: 10px 10px;
+	padding-bottom: 20px;
+	border-bottom:1px solid #fea201;
+}
+.list-name {
+	background-color:#FFF;
+    position:absolute;
+	display:none;
+	list-style-type:none;
+	margin-top:40px;	
+	padding:10px 40px;
+	border: 1px solid #fea201;
+    border-radius: 10px;
+}
+.list-name1 {
+	display:none;
+}
+.list-name li:hover .list-name1 {
+	display:block;
+	position:absolute;
+}
+.list-name li {
+	padding:10px;
+	border: tomato;
+	overflow:hidden;
+	padding: 5px 5x;
+	border-bottom:1px solid #fea201;
+}
+.list-name li:last-child {
+	border:none;
+	margin:none;
+}
+.list:hover .list-name {
+	display:block;
+}
+.list-name li > a {
+	text-decoration:none;
+}
+.list {
+	width:21%;
+	padding:4px;
+	float:left;
+	border:1px solid #fea201;
+	border-radius:10px;
+}
+.list > .hover > p {
+	float:left;
+	color:#F00;
+	margin: 4px;
+	font-size:20px;
+}
+.list > .hover > p > a {
+	text-decoration:none;
+	color:tomato;
+}
+
+/*------------------------------------------------------------------------*/
+.search {
+	width:52%;
+	float:left;
+	line-height:32px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.search input {
+	width:80%;
+	border: 2px solid #fea201;
+	line-height:33px;
+	border-radius:6px;
+}
+.search button {
+	padding: 4px;
+	background-color: #fea201;
+	border-radius: 4px;
+	line-height:24px;
+}
+.search button i {
+	line-height: 21px;
+    font-size: 19px;
+	color:#FFF;
+}
+
+/*---------------------------------------------*/
+.log-in-out {
+	width:22%;
+	float:left;
+	line-height:41px;
+}
+.log-in-out  a {
+	text-decoration:none;
+	text-transform:uppercase;
+	float: left;
+    display: block;
+    color: tomato;
+    text-align: center;
+    padding: 7px 8	px;
+    font-size: 17px;
+	min-width:120px;
+}
+.log-in-out  a:hover {
+	background-color: #fea201;
+	color: white;
+}
+
+/*CSS body*/
+.body {
+	padding:20px;
+	margin-top: 20px;
+	overflow:hidden;
+	border-bottom:1px solid #fea201;
+}
+.imges {
+	float:left;
+	width:20%;
+}
+.imges img {
+	width:100%;
+	padding:10px;
+}
+.danhGia {
+	text-align:center;
+	font-size:20px;
+}
+.star {
+	text-align:center;
+	color:#fea201;
+}
+.info {
+	float:left;
+	width:50%;
+	margin-left:65px;
+	margin-top: 20px;
+	margin-bottom:20px;
+}
+.info-2 {
+	padding:20px;
+}
+.info-1 {
+	border-bottom:1px solid #CCC;
+}
+.info-1 h1 {
+	margin-bottom:10px;
+	font-size:20px;
+}
+.info-3{
+	list-style-type:none;
+}
+.info-4 {
+	float:left;
+	border-right:10px;
+	width:128px;
+}
+.info-5 {
+	color:#00aaf1;
+}
+.info-5 > a {
+	color:#00aaf1;
+	text-decoration:none;
+}
+.info-6 {
+	font-size:24px;
+	color:#0F0;
+}
+
+/* Mua hàng */
+.tinhToan {
+	overflow:hidden;
+	margin-top:40px;
+}
+.chonSoLuong {
+	padding:10px 10px;
+	float:left;
+}
+.muaHang {
+	padding:5px;
+	float:left;
+}
+.yeuThich {
+	padding:5px;
+	float:left;
+}
+
+/*---------------Bán chạy--------------------*/
+div.topBanChay {
+	float:left;
+	border:1px solid #dfdfdf;
+	margin-top: 20px;
+	border-radius:6px;
+	width:21%;
+	margin-left:25px;
+}
+div.topBanChay-Name {
+    font-weight: 700;
+    border-bottom: 1px solid #ebebeb;
+    background: #f7f7f7;
+    line-height: 38px;
+    text-indent: 40px;
+    border-radius: 6px 6px 0 0;
+}
+ul.topBanChay-List {
+	list-style-type:none;
+	padding:2px 2px;
+	margin-bottom:0;
+}
+li.clearFix {
+	overflow:hidden;
+	padding-bottom:10px;
+	border-bottom: 1px solid #ebebeb;
+	margin-top:10px;
+}
+li.clearFix:hover {
+	padding:2px;
+	border:1px solid #fea201;
+	border-radius:4px;
+}
+li.clearFix:first-child {
+	margin-top:0;
+}
+li.clearFix:last-child {
+	border-bottom: 0;
+}
+li.clearFix > a {
+	width:25%;
+	float:left;
+	margin:0 10px;
+}
+li.clearFix a > img {
+	width:100%;
+}
+div.clearFix-Name {
+	width:60%;
+	float:left;
+	margin:0 5px;	;
+}
+div.clearFix-Name a {
+	text-decoration:none;
+	color:#fea201;
+}
+div.clearFix-Price {
+	padding-top:10px;
+	font-size:20px;	
+	color:#3F6;
+}
+
+/*------------- Tạo Danh sách ------------------*/
+.muaNhieu-name > h2{
+	color:tomato;
+	padding:10px;
+	border-bottom:1px solid #CCC;
+	text-align:center;
+}
+.muaNhieu-1 {
+	margin:2%;
+}
+.muaNhieu-2 {
+	list-style-type:none;
+	overflow:hidden;
+}
+.muaNhieu-3 {
+	width:18%;
+	float:left;
+	padding:10px 10px;
+}
+.muaNhieu-3 > div > a > img {
+	width:100%;
+}
+.muaNhieu-3 > p {
+	text-align:center;
+}
+div.imgaes-Name {
+	padding:10px;
+	text-align:center;
+}
+div.imgaes-Name > a {
+	text-decoration:none;
+}
+div.price {
+	margin:13px;
+    color: #fea201;
+    font-size: 16px;
+    font-weight: 700;
+	text-align:center;
+}
+div.phatHanh {
+	text-align:center;
+	background-color:#f3ffdf;
+	border-radius:6px;
+}
+div.images-star {
+	text-align:center;
+	padding:10px 0;
+	color:#FF0;
+}
+ul.muaNhieu-2 li:hover {
+	border:1px solid #fea201;
+	padding:2px;
+	border-radius:6px;
+}
+
+/*Tạo danh sách mua nhiều*/
+.introduce-name > h2{
+	text-align:center;
+	color:tomato;
+	padding:10px;
+	border-bottom:1px solid #CCC;
+}
+.introduce-name3 {
+	padding:0 20px;
+}
+.introduce-name3 p {
+	font-family: tahoma, arial, helvetica, sans-serif;
+	font-size:16px;
+}
+
+/*------------------- footer ------------------------ */
+div.footer {
+	margin-top:50px;
+	padding:30px;
+	background-color:#f7f7f7;
+	border-radius:6px;
+	overflow:hidden;
+}
+div.fb1 {
+	float:left;
+	margin-left:40px;
+}
+div.fb1-Name {
+	color: #000;
+	font-weight: 700;
+    padding-bottom: 10px;
+}
+div.fb1-Hotline b {
+	font-size:18px;	
+}
+div.fb2 {
+	float:left;
+	margin-left:50px;
+}
+div.fb2-Name {
+	color: #000;
+    font-weight: 700;
+	padding-left:39px;
+}
+ul.list-1 {
+	list-style-type:none;
+}
+ul.list-1 li {
+	padding:10px 0;
+}
+ul.list-1 li a {
+	color:#6a7379;
+	text-decoration:none;
+}
+ul.list-1 li a:hover {
+	color:#00F;
+}
+
+/*Go to top*/
+.goToTop {
+	width:20%;
+}
+.goToTop > a > img {
+	opacity: 0.2;
+    position: fixed;
+    bottom: 18px;
+    right: 25px;
+    width: 55px;
+}

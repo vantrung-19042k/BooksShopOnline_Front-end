@@ -1,0 +1,484 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link href="../CSS/animate.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="../imges/books.png" />
+    <link href="../CSS/book.css" rel="stylesheet" />
+    <script src="../JQuery/jquery-3.4.1.min.js"></script>
+    <script src="../JS/wow.min.js"></script>
+    <link href="../fontawesome-free-5.9.0-web/css/all.min.css" rel="stylesheet" />
+    <title>Sách: Kiên Trì Ắt Được Đền Đáp</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        function tinh() {
+            var a = document.getElementById("soLuong");
+            var b = 65000;
+            var gia = a.value * b + "đ";
+            return gia;
+        }
+        function showInfo() {
+            var a = "Bạn đã đặt hàng thành công";
+            var b = "Tên sách: Kiên Trì Ắt Được Đền Đáp";
+            var c = "Tác giả: Nhiều Tác Giả";
+            var d = "Tổng tiền: " + tinh();
+            var e = a + "\n" + b + "\n" + c + "\n" + d;
+            alert(e);
+        }
+    </script>
+    <script>
+        jQuery(document).ready(function ($) {
+            if ($(".goToTop").length > 0) {
+                $(window).scroll(function () {
+                    var e = $(window).scrollTop();
+                    if (e > 300) {
+                        $(".goToTop").show()
+                    } else {
+                        $(".goToTop").hide()
+                    }
+                });
+                $(".goToTop").click(function () {
+                    $('body,html').animate({
+                        scrollTop: 0
+                    })
+                })
+            }
+        });
+    </script>
+    <div class="body-body">
+        <!--Tạo header-->
+        <div class="header wow bounceInLeft">
+            <div class="header-top"><a href="#"><img
+                        src="../imges/67570112_640356469805196_2873906000941809664_n.jpg" /></a></div>
+            <div class="menu">
+                <ul class="menu-tag">
+                    <li><a href="../Index.html">Trang Chủ</a></li>
+                    <li><a href="#" onClick="alert('Đang Cập Nhật')">Blog Sách Hay</a></li>
+                    <li><a href="#" onClick="alert('Đang Cập Nhật')">Giới Thiệu</a></li>
+                    <li><a href="#" onClick="alert('Đang Cập Nhật')">Liên Hệ</a></li>
+                    <li><a href="#" onClick="alert('Đang Cập Nhật')">Diễn Đàn</a></li>
+                </ul>
+            </div>
+            <div class="hotline changeBgAnimation">
+                <div class="hotline-info">
+                    <i class="fa fa-phone"></i> 0905340611
+                </div>
+            </div>
+        </div>
+        <!-- Tạo danh sách menu-->
+        <div class="menu-list wow bounceInRight ">
+            <div class="list">
+                <div class="hover">
+                    <p><a href="#"><img src="../imges/menu.jpg" /></a></p>
+                    <p><a href="#">TẤT CẢ DANH MỤC</a></p>
+                </div>
+                <ul class="list-name">
+                    <li><a href="../TheLoai/SachVanHoc.html">Sách Văn Học</a>
+                    </li>
+                    <li><a href="../TheLoai/TruyenTranh.html">Truyện Tranh</a></li>
+                    <li><a href="../TheLoai/SachKinhTe.html">Sách kinh tế</a></li>
+                    <li><a href="../TheLoai/SachOnThiDaiHoc.html">Sách ôn thi đại học</a></li>
+                    <li><a href="#" onClick="alert('Đang Cập Nhật')">Văn Phòng Phẩm</a></li>
+                    <li><a href="#" onClick="alert('Đang Cập Nhật')">Quà Tặng</a></li>
+                </ul>
+            </div>
+            <form class="search">
+                <input type="text" style="padding-left: 10px;" placeholder="Nhập từ khóa..." name="search" size="40"
+                    class="in1">
+                <button type="submit"><i class="fa fa-search" style="padding: 0px 10px;"></i></button>
+            </form>
+            <div class="log-in-out">
+                <a href="../Trang/DangNhap.html">Đăng Nhập</a>
+                <a href="../Trang/DangKy.html">Đăng Kí</a>
+            </div>
+        </div>
+        <!-- Tạo body -->
+        <div class="body">
+            <div class="imges">
+                <img src="../imges/Index/kien-tri-at-duoc-den-dap.jpg" />
+                <div class="danhGia">Đánh Giá</div>
+                <div class="star">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+            <div class="info">
+                <div class="info-1">
+                    <h1>Kiên Trì Ắt Được Đền Đáp</h1>
+                </div>
+                <ul class="info-2">
+                    <li class="info-3">
+                        <div class="info-4">Tác giả</div>
+                        <div class="info-5">Nhiều Tác Giả</div>
+                    </li>
+                </ul>
+                <ul class="info-2">
+                    <li class="info-3">
+                        <div class="info-4">Giá bìa</div>
+                        <div class="info-6">65.000<sup>đ</sup></div>
+                    </li>
+                </ul>
+                <ul class="info-2">
+                    <li class="info-3">
+                        <div class="info-4">Thương hiệu</div>
+                        <div class="info-5">Đang cập nhật</div>
+                    </li>
+                </ul>
+                <ul class="info-2">
+                    <li class="info-3">
+                        <div class="info-4">Nhà phát hành</div>
+                        <div class="info-5">GUbook</div>
+                    </li>
+                </ul>
+                <ul class="info-2">
+                    <li class="info-3">
+                        <div class="info-4">Kích thước</div>
+                        <div class="info-5">13.5 x 20 cm</div>
+                    </li>
+                </ul>
+                <ul class="info-2">
+                    <li class="info-3">
+                        <div class="info-4">Trọng lượng</div>
+                        <div class="info-5">500g</div>
+                    </li>
+                </ul>
+                <ul class="info-2">
+                    <li class="info-3">
+                        <div class="info-4">Số trang</div>
+                        <div class="info-5">256</div>
+                    </li>
+                </ul>
+                <ul class="info-2">
+                    <li class="info-3">
+                        <div class="info-4">Định dạng bìa</div>
+                        <div class="info-5">Bìa mềm</div>
+                    </li>
+                </ul>
+                <ul class="info-2">
+                    <li class="info-3">
+                        <div class="info-4">Phát hành</div>
+                        <div class="info-5">07 - 2019</div>
+                    </li>
+                </ul>
+                <ul class="info-2">
+                    <li class="info-3">
+                        <div class="info-4">Nhà xuất bản</div>
+                        <div class="info-5">NXB Thế Giới</div>
+                    </li>
+                </ul>
+                <!-- Tạo tính toán-->
+                <div class="tinhToan">
+                    <div class="chonSoLuong">
+                        Số lượng
+                        <select class="chon" id="soLuong">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+                    <div class="muaHang">
+                        <img onClick="showInfo();" src="../imges/buy-now.jpg" />
+                    </div>
+                    <div class="yeuThich">
+                        <img onClick="alert('Đã thêm vào danh sách yêu thích')" src="../imges/buy2b.jpg" />
+                    </div>
+                </div>
+            </div>
+            <!--Tạo danh sách bán chạy -->
+            <div class="topBanChay">
+                <div class="topBanChay-Name">
+                    Top Bán Chạy
+                </div>
+                <ul class="topBanChay-List">
+                    <li class="clearFix">
+                        <a href="../Sach/SachBinhTinhKhiEManhMeKhiYeu.html">
+                            <img src="../imges/Sach/TopBanChay/binh-tinh-khi-e-manh-me-khi-yeu.jpg" />
+                        </a>
+                        <div class="clearFix-Name">
+                            <a href="../Sach/SachBinhTinhKhiEManhMeKhiYeu.html">Bình tĩnh khi Ế, Mạnh mẽ khi yêu</a>
+                            <div class="clearFix-Price">69,000<sup>đ</sup></div>
+                        </div>
+                    </li>
+                    <li class="clearFix">
+                        <a href="../Sach/SachTramDungVoDinh.html">
+                            <img src="../imges/Sach/TopBanChay/tram-dung-vo-dinh-manga.jpg" />
+                        </a>
+                        <div class="clearFix-Name">
+                            <a href="../Sach/SachTramDungVoDinh.html">Trạm Dừng Vô Định (Manga - Trọn bộ 5 Tập)</a>
+                            <div class="clearFix-Price">149,000<sup>đ</sup></div>
+                        </div>
+                    </li>
+                    <li class="clearFix">
+                        <a href="../Sach/SachLongTotCuaBanCanThemDoiPhanSacXao.html">
+                            <img src="../imges/Sach/TopBanChay/long-tot-cua-ban-can-them-doi-phan-sac-sao.jpg" />
+                        </a>
+                        <div class="clearFix-Name">
+                            <a href="../Sach/SachLongTotCuaBanCanThemDoiPhanSacXao.html">Lòng Tốt Của Bạn Cần Thêm
+                                Đôi Phần Sắc Sảo</a>
+                            <div class="clearFix-Price">86,000<sup>đ</sup></div>
+                        </div>
+                    </li>
+                    <li class="clearFix">
+                        <a href="../Sach/SachThayCoGiaoHanhPhucSeThayDoiTheGioiTap1.html">
+                            <img src="../imges/Sach/TopBanChay/thay-co-giao-hanh-phuc-se-thay-doi-gioi-tap-1.jpg" />
+                        </a>
+                        <div class="clearFix-Name">
+                            <a href="../Sach/SachThayCoGiaoHanhPhucSeThayDoiTheGioiTap1.html">Thầy Cô Giáo Hạnh Phúc
+                                Sẽ Thay Đổi Thế Giới - Tập 1 : Cẩm Nang Hạnh Phúc</a>
+                            <div class="clearFix-Price">82,000<sup>đ</sup></div>
+                        </div>
+                    </li>
+                    <li class="clearFix">
+                        <a href="../Sach/SachEmKhongCoGiDeMac.html">
+                            <img src="../imges/Sach/TopBanChay/76978_14_11_18_em-khong-co-gi-de-mac.png" />
+                        </a>
+                        <div class="clearFix-Name">
+                            <a href="../Sach/SachEmKhongCoGiDeMac.html">Em Không Có Gì Để Mặc
+                            </a>
+                            <div class="clearFix-Price">74,000<sup>đ</sup></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Tạo danh sách mua nhiều -->
+        <div class="muaNhieu">
+            <div class="muaNhieu-name">
+                <h2>Có Thể Bạn Quan Tâm</h2>
+            </div>
+            <div class="muaNhieu-1">
+                <ul class="muaNhieu-2">
+                    <li class="muaNhieu-3">
+                        <div class="imgaes">
+                            <a href="../Sach/SachNoiToiNgaXuong.html"><img
+                                    src="../imges/CoTheBanQuanTam/20457_09_08_19_noi-toi-nga-xuong.jpg" /></a>
+                        </div>
+                        <div class="imgaes-Name">
+                            <a href="../Sach/SachNoiToiNgaXuong.html">Nơi tôi ngã xuống</a>
+                        </div>
+                        <div class="images-star">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <div class="price">77,000đ</div>
+                        <div class="phatHanh">
+                            Phát hành: <b>08-2019</b>
+                        </div>
+                    </li>
+                    <li class="muaNhieu-3">
+                        <div class="imgaes">
+                            <a href="../Sach/SachDuHocTuoi16.html"><img
+                                    src="../imges/CoTheBanQuanTam/39748_09_08_19_du-hoc-my-tuoi-16.gif" /></a>
+                        </div>
+                        <div class="imgaes-Name">
+                            <a href="../Sach/SachDuHocTuoi16.html">Du học tuổi 16</a>
+                        </div>
+                        <div class="images-star">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <div class="price">72,000đ</div>
+                        <div class="phatHanh">
+                            Phát hành: <b>01-2018</b>
+                        </div>
+                    </li>
+                    <li class="muaNhieu-3">
+                        <div class="imgaes">
+                            <a href="../Sach/SachBenKiaMayTroiLaHenUoc.html"><img
+                                    src="../imges/CoTheBanQuanTam/50274_08_08_19_ben-kia-may-troi-la-noi-hen-uoc.jpg" /></a>
+                        </div>
+                        <div class="imgaes-Name">
+                            <a href="../Sach/SachBenKiaMayTroiLaHenUoc.html">Bên Kia Mây Trời Là Nơi Hẹn Ước</a>
+                        </div>
+                        <div class="images-star">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <div class="price">123,000đ</div>
+                        <div class="phatHanh">
+                            Phát hành: <b>08-2019</b>
+                        </div>
+                    </li>
+                    <li class="muaNhieu-3">
+                        <div class="imgaes">
+                            <a href="../Sach/SachNguoiKeo.html"><img
+                                    src="../imges/CoTheBanQuanTam/45054_08_08_19_nguoi-keo.jpg" /></a>
+                        </div>
+                        <div class="imgaes-Name">
+                            <a href="../Sach/SachNguoiKeo.html">Người kéo</a>
+                        </div>
+                        <div class="images-star">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <div class="price">115,000đ</div>
+                        <div class="phatHanh">
+                            Phát hành: <b>08-2019</b>
+                        </div>
+                    </li>
+                    <li class="muaNhieu-3">
+                        <div class="imgaes">
+                            <a href="../Sach/SachGiaDinhTromCap.html"><img
+                                    src="../imges/CoTheBanQuanTam/76130_07_08_19_gia-dinh-trom-cap.jpg" /></a>
+                        </div>
+                        <div class="imgaes-Name">
+                            <a href="../Sach/SachGiaDinhTromCap.html">Gia đình trộm cắp</a>
+                        </div>
+                        <div class="images-star">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <div class="price">93,000đ</div>
+                        <div class="phatHanh">
+                            Phát hành: <b>08-2019</b>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Tạo giới thiệu thông tin sách -->
+        <div class="introduce">
+            <div class="introduce-name">
+                <h2>Giới thiệu</h2>
+            </div>
+            <div class="introduce-name2">
+                <h3>Kiên Trì Ắt Được Đền Đáp</h3>
+            </div>
+            <div class="introduce-name3">
+                <p>Mười năm trước, những lời hùng hồn bạn nói với bạn bè, đến bây giờ đã thực hiện được chưa?</p>
+                <p>Hôm nay, những lời hứa với bản thân sẽ tiếp tục phấn đấu, liệu mười năm sau có thực hiện được không?
+                </p>
+                <p>Vô số những đem đen cô đơn tĩnh mịch và những ngày tháng vất vả.</p>
+                <p>Vô số lần giằng co gắng gượng trước tiếng cười nhạo và ánh mắt khinh bỉ của mọi người.</p>
+                <p>Dần dần chặt hết gai nhọn mới có con đường thuộc về riêng mình.</p>
+                <p>Vượt qua những ngọn núi cao mới có thể nhìn thấy bầu trời rộng mở.</p>
+                <p>Và sự kiên trì của bạn sẽ được đền đáp.</p>
+            </div>
+        </div>
+        <!-- Tạo danh sách cùng tác giả-->
+        <div class="muaNhieu">
+            <div class="muaNhieu-name">
+                <h2>Sách Cùng Tác Giả</h2>
+            </div>
+            <div class="muaNhieu-1">
+                <ul class="muaNhieu-2">
+                    <li class="muaNhieu-3">
+                        <div class="imgaes">
+                            <a href="../Sach/SachBenKiaMayTroiLaHenUoc.html"><img
+                                    src="../imges/CoTheBanQuanTam/50274_08_08_19_ben-kia-may-troi-la-noi-hen-uoc.jpg" /></a>
+                        </div>
+                        <div class="imgaes-Name">
+                            <a href="../Sach/SachBenKiaMayTroiLaHenUoc.html">Bên Kia Mây Trời Là Nơi Hẹn Ước</a>
+                        </div>
+                        <div class="images-star">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <div class="price">123,000đ</div>
+                        <div class="phatHanh">
+                            Phát hành: <b>08-2019</b>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Tạo Go To Top -->
+        <div class="goToTop">
+            <a href="#"><img id="myBtn" src="../imges/iconfinder_f-top_256_282460.png" alt="Go To Top" /></a>
+        </div>
+    </div>
+    <!-- Tạo footer -->
+    <div class="footer">
+        <div class="fb1">
+            <div class="fb1-Name">BOOK</div>
+            <div class="fb1-Adress">
+                <p>Đ/C: 371 Nguyễn Kiệm, Gò Vấp, HCM</p>
+            </div>
+            <div class="fb1-Hotline">
+                <p>Holine</p>
+                <b>0905340611</b>
+            </div>
+            <div class="fb1-Hotline">
+                <p>Email</p>
+                <b>1851050165trung@ou.edu.vn</b>
+            </div>
+        </div>
+        <div class="fb2">
+            <div class="fb2-Name">Hỗ Trợ Khách Hàng</div>
+            <div class="fb2-List">
+                <ul class="list-1">
+                    <li><a href="#" onClick="alert('Đang cập nhật')">Câu hỏi thường gặp</a></li>
+                    <li><a href="#" onClick="alert('Đang cập nhật')">Chính Sách</a></li>
+                    <li><a href="#" onClick="alert('Đang cập nhật')">Bảo Mật</a></li>
+                    <li><a href="#" onClick="alert('Đang cập nhật')">Bảo Hành Và Đổi Trả</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="fb2">
+            <div class="fb2-Name">Chủ Đề Nổi Bật</div>
+            <div class="fb2-List">
+                <ul class="list-1">
+                    <li><a href="../ChuDe/ChuDeTruyenNgonTinh.html">Truyện Ngôn Tình</a></li>
+                    <li><a href="../ChuDe/ChuDeSachTamLy.html">Sách Tâm Lí</a></li>
+                    <li><a href="../ChuDe/ChuDeSachKiNangSong.html">Sách Kĩ Năng Sống</a></li>
+                    <li><a href="../ChuDe/ChuDeSachKinhDoanh.html">Sách Kinh Doanh</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="fb2">
+            <div class="fb2-Name">Tác Giả Tiêu Biểu</div>
+            <div class="fb2-List">
+                <ul class="list-1">
+                    <li><a href="../TacGia/TacGiaNguyenNhatAnh.html">Nguyễn Nhật Ánh</a></li>
+                    <li><a href="../TacGia/TacGiaTrangHa.html">Trang Hạ</a></li>
+                    <li><a href="../TacGia/TacGiaTonyBuoiSang.html">Tony Buổi Sáng</a></li>
+                    <li><a href="../TacGia/TacGiaJKRowling.html">J. K. Rowling</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="fb2">
+            <div class="fb2-Name">Nhà Phát Hành Tiêu Biểu</div>
+            <div class="fb2-List">
+                <ul class="list-1">
+                    <li><a href="../NXB/NXBKimDong.html">Kim Đồng</a></li>
+                    <li><a href="../NXB/NXBNhaNam.html">Nhã Nam</a></li>
+                    <li><a href="../NXB/NXBTre.html">NXB Trẻ</a></li>
+                    <li><a href="../NXB/NXBFirstNew.html">First News - Trí Việt</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
